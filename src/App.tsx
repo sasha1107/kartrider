@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Match from './pages/Match'
 import styled from 'styled-components'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </StyledContainer>
         <Footer/>
       </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen={false} position='bottom-right'/>
     </div>
   )
 }
