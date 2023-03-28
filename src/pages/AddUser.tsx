@@ -15,6 +15,8 @@ export default function AddUser() {
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         console.log(username)
+        localStorage.setItem('username', username)
+        localStorage.setItem('accessId', data.accessId)
         console.log('제출')
     }
     console.log(data)

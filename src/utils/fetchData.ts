@@ -1,6 +1,8 @@
-const BASE_URL = `/api/users/nickname/분홍땀`;
-const username = '분홍땀'
-const accessId = '319193618';
+localStorage.setItem('accessId',"419678316");
+localStorage.setItem('username',"똥멍청eee");
+const username = localStorage.getItem('username');
+const accessId = localStorage.getItem('accessId');
+
 
 export const fetchData = async () => {
     const response = await(await fetch(`/api/users/nickname/${username}`, {
