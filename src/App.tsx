@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Match from './pages/Match'
+import styled from 'styled-components'
 
 function App() {
   return (
@@ -12,14 +13,22 @@ function App() {
       <GlobalStyle/>
       <BrowserRouter>
         <Header/>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/match' element={<Match />} />
-        </Routes>
+        <StyledContainer>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/edit' element={<AddUser />} />
+            <Route path='/match' element={<Match />} />
+          </Routes>
+        </StyledContainer>
         <Footer/>
       </BrowserRouter>
     </div>
   )
 }
 
-export default App
+export default App;
+
+const StyledContainer = styled.main`
+  /* margin-top:  */ // header 영역
+  margin-bottom: 60px; // footer 영역
+`
