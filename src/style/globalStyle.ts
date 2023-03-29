@@ -14,4 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         font-family : "NEXON Lv1 Gothic OTF"; 
     }
+    button {
+        font-family : "NEXON Lv1 Gothic OTF"; 
+    }
 `
