@@ -17,5 +17,8 @@ const data = {
 } as const;
 
 export const getName = (type: keyof typeof data, id: string) => {
-    return data[type].filter(i => i.id === id)[0].name;
+    if (!!data[type].filter(i => i.id === id).length){
+        return data[type].filter(i => i.id === id)[0].name;
+    }
+    return null;
 }
