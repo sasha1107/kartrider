@@ -17,4 +17,14 @@ export const GlobalStyle = createGlobalStyle`
     button {
         font-family : "NEXON Lv1 Gothic OTF"; 
     }
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
 `
